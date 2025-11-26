@@ -25,15 +25,22 @@ class _LoginScreenState extends State<LoginScreen> {
       resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
-          Positioned.fill(
-            child: Image.asset(
-              'assets/images/loginbgimage.png',
-              fit: BoxFit.cover,
-            ),
-          ),
+         Positioned(
+              left: 0,
+              right: 0,
+              top: 0,
+              child: SizedBox(
+                height: MediaQuery.of(context).size.height * 0.70,
+                child: Image.asset(
+                'assets/images/loginbgimage.png',
+                  fit: BoxFit.cover,
+                ),
+              ),
+        ),
+
           Positioned.fill(
             child: Container(
-              color: Colors.black.withOpacity(0.8),
+              color: Colors.black.withOpacity(0.2),
             ),
           ),
           Positioned(
